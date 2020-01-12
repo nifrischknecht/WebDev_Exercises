@@ -1,0 +1,35 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+
+.btn{
+    width: 250px;
+    height: 100px;
+    display: block;
+    background-color: greenyellow;
+    border: solid 4px palevioletred;
+    padding: 20px 50px 20px 50px;
+    border-radius: 5px 10px 5px 10px;
+    font-size: 2rem;
+    color: palevioletred;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    margin: auto;
+}
+
+.btn:hover{
+    background-color: palevioletred;
+    border: solid 4px greenyellow;
+    box-shadow: 10px 10px 15px rgba(255, 0, 255, 0.6);
+    color: greenyellow;
+}
+
+.moves{
+    height: 250px;
+    width: 250px;
+    background-color: blue;
+    margin: auto;
+}
