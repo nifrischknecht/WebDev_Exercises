@@ -1,0 +1,21 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem; }
+
+.animation {
+  width: 50vw;
+  height: 50vh;
+  background-color: greenyellow; }
+  .animation__text {
+    display: flex;
+    justify-content: center; }
+  .animation__image {
+    width: 8rem;
+    height: 8rem;
+    margin: 5rem auto 5rem auto; }
