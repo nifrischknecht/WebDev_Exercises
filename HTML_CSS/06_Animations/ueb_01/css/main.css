@@ -9,13 +9,71 @@ body {
   margin-top: 5rem; }
 
 .animation {
-  width: 50vw;
-  height: 50vh;
-  background-color: greenyellow; }
+  width: 50vw; }
   .animation__text {
     display: flex;
     justify-content: center; }
-  .animation__image {
+  .animation__fly {
+    width: 1.5rem;
+    margin: 5rem auto 0rem auto;
+    position: absolute;
+    left: 61rem;
+    top: 4.5rem;
+    animation-name: fly;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: linear; }
+
+@keyframes fly {
+  0% {
+    transform: rotate(0deg) translateX(40px) rotate(0deg);
+    width: 0; }
+  30% {
+    transform: rotate(360deg) translateX(40px) rotate(-360deg);
+    width: 2%; }
+  50% {
+    transform: rotateX(1 1 1 30deg); }
+  70% {
+    transform: rotateX(3 3 3 180deg);
+    width: 3.5%; }
+  100% {
+    transform: rotateX(3 3 3 0deg);
+    transform: rotate(360deg);
+    width: 0%; } }
+  .animation__wineglass {
     width: 8rem;
     height: 8rem;
-    margin: 5rem auto 5rem auto; }
+    margin: 8rem auto 5rem auto;
+    animation-name: wine;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both; }
+
+@keyframes wine {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .animation__loading-bar {
+    width: 15rem;
+    height: 2rem;
+    border-radius: 4rem;
+    margin: 10rem auto 5rem auto;
+    background-image: linear-gradient(to right, #a50042, #871138, #680c28, #450214, #320005);
+    animation: load 3s linear 1s infinite; }
+
+@keyframes load {
+  0% {
+    background-image: linear-gradient(to right, #a50042, #871138, #680c28, #450214, #320005); }
+  20% {
+    background-image: linear-gradient(to right, #871138, #680c28, #450214, #320005, #a50042); }
+  40% {
+    background-image: linear-gradient(to right #680c28, #450214, #320005, #a50042, #871138); }
+  60% {
+    background-image: linear-gradient(to right, #450214, #320005, #a50042, #871138, #680c28); }
+  80% {
+    background-image: linear-gradient(to right, #320005, #a50042, #871138, #680c28, #450214); }
+  100% {
+    background-image: linear-gradient(to right, #a50042, #871138, #680c28, #450214, #320005); } }

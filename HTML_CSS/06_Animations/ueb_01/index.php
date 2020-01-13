@@ -13,14 +13,21 @@
 
     <div class="animation">
         <div class="animation__text">
-            Loading a glas of redwine...
+            Loading time... Fruchtfliegen nerven!
         </div>
         <div class="animation__fly">
+            <img src="images/fly.svg">
         </div>
-        <div class="animation__image">
+        <div class="animation__wineglass">
             <img src="images/glas-redwine.svg">
         </div>
+        <div class="animation__loading-bar">
+        </div>
     </div>
+
+
+
+
 
 </body>
 </html>
